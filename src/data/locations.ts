@@ -1,0 +1,36 @@
+export const locations = [
+  {
+    name: "Pomona",
+    address: "819 E Mission Blvd",
+    city: "Pomona, CA 91766",
+    phone: "909-417-5369",
+    phoneHref: "tel:+19094175369",
+    mapQuery: "819+E+Mission+Blvd+Pomona+CA+91766",
+    hours: [
+      { day: "Monday", time: "10:00 AM – 6:00 PM" },
+      { day: "Tuesday", time: "10:00 AM – 6:00 PM" },
+      { day: "Wednesday", time: "10:00 AM – 6:00 PM" },
+      { day: "Thursday", time: "10:00 AM – 6:00 PM" },
+      { day: "Friday", time: "10:00 AM – 6:00 PM" },
+      { day: "Saturday", time: "9:00 AM – 3:00 PM" },
+      { day: "Sunday", time: "Closed" },
+    ],
+  },
+  {
+    name: "Compton",
+    address: "1308 E Alondra Blvd",
+    city: "Compton, CA 90222",
+    phone: "(424) 785-6995",
+    phoneHref: "tel:+14247856995",
+    mapQuery: "1308+E+Alondra+Blvd+Compton+CA+90222",
+    hours: [
+      { day: "Monday", time: "10:00 AM – 6:00 PM" },
+      { day: "Tuesday", time: "10:00 AM – 6:00 PM" },
+      { day: "Wednesday", time: "10:00 AM – 6:00 PM" },
+      { day: "Thursday", time: "10:00 AM – 6:00 PM" },
+      { day: "Friday", time: "10:00 AM – 6:00 PM" },
+      { day: "Saturday", time: "9:00 AM – 3:00 PM" },
+      { day: "Sunday", time: "Closed" },
+    ],
+  },
+];

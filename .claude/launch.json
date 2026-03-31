@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sunny-kids-dental",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "start", "-p", "3789"],
+      "port": 3789,
+      "autoPort": false
+    }
+  ]
+}

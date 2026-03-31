@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sunny-red: #E53935;
+  --color-sunny-blue: #1E88E5;
+  --color-sunny-green: #43A047;
+  --color-sunny-orange: #FB8C00;
+  --color-sunny-yellow: #FDD835;
+  --color-sunny-peach: #FFCCBC;
+  --color-bg-cream: #FFF8F0;
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #6B7280;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sun rays rotation */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Sparkle twinkle */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Cloud drift */
+@keyframes drift {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0px); }
+}
+
+/* Pulse glow for CTAs */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4); }
+  50% { box-shadow: 0 0 20px 4px rgba(229, 57, 53, 0.2); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-drift {
+  animation: drift 8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* Delay utilities for staggered animations */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1500 { animation-delay: 1.5s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-3000 { animation-delay: 3s; }

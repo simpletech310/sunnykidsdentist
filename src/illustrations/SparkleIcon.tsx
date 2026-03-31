@@ -1,0 +1,7 @@
+export default function SparkleIcon({ className = "w-6 h-6", color = "#FDD835" }: { className?: string; color?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill={color} className={className} xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" />
+    </svg>
+  );
+}
