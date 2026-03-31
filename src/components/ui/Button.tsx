@@ -4,11 +4,11 @@ type ButtonVariant = "primary" | "secondary" | "outline";
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-sunny-red text-white hover:bg-red-600 shadow-lg hover:shadow-xl animate-pulse-glow",
+    "bg-sunny-red text-white hover:bg-red-600 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
   secondary:
-    "bg-sunny-blue text-white hover:bg-blue-600 shadow-lg hover:shadow-xl",
+    "bg-sunny-blue text-white hover:bg-blue-600 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
   outline:
-    "bg-white text-sunny-blue border-2 border-sunny-blue hover:bg-sunny-blue hover:text-white",
+    "bg-white text-sunny-blue border-2 border-sunny-blue hover:bg-sunny-blue hover:text-white hover:-translate-y-0.5 shadow-md",
 };
 
 export default function Button({

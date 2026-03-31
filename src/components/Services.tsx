@@ -5,11 +5,11 @@ import Card from "./ui/Card";
 import ToothIcon from "@/illustrations/ToothIcon";
 import { services } from "@/data/services";
 
-const colorMap: Record<string, { border: string; tooth: string }> = {
-  "sunny-blue": { border: "#1E88E5", tooth: "#1E88E5" },
-  "sunny-red": { border: "#E53935", tooth: "#E53935" },
-  "sunny-green": { border: "#43A047", tooth: "#43A047" },
-  "sunny-orange": { border: "#FB8C00", tooth: "#FB8C00" },
+const colorMap: Record<string, { border: string; tooth: string; bg: string }> = {
+  "sunny-blue": { border: "#1E88E5", tooth: "#1E88E5", bg: "bg-blue-50" },
+  "sunny-red": { border: "#E53935", tooth: "#E53935", bg: "bg-red-50" },
+  "sunny-green": { border: "#43A047", tooth: "#43A047", bg: "bg-green-50" },
+  "sunny-orange": { border: "#FB8C00", tooth: "#FB8C00", bg: "bg-orange-50" },
 };
 
 export default function Services() {
@@ -27,9 +27,9 @@ export default function Services() {
           {services.map((service, i) => {
             const colors = colorMap[service.color] || colorMap["sunny-blue"];
             return (
-              <Card key={i} borderColor={colors.border}>
-                <div className="mb-3">
-                  <ToothIcon className="w-10 h-10" color={colors.tooth} />
+              <Card key={i} borderColor={colors.border} className="group">
+                <div className={`w-14 h-14 rounded-xl ${colors.bg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <ToothIcon className="w-8 h-8" color={colors.tooth} />
                 </div>
                 <h3 className="font-[family-name:var(--font-nunito)] font-bold text-lg text-text-dark mb-2">
                   {service.title}

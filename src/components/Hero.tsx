@@ -51,14 +51,16 @@ export default function Hero() {
           className="mb-6"
         >
           <div className="animate-float inline-block">
-            <Image
-              src="/sunnykidsdental.jpg"
-              alt="Sunny Kids Dental Logo"
-              width={180}
-              height={180}
-              className="mx-auto rounded-3xl shadow-2xl"
-              priority
-            />
+            <div className="w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden bg-white shadow-2xl ring-4 ring-white/80 mx-auto">
+              <Image
+                src="/sunnykidsdental.jpg"
+                alt="Sunny Kids Dental Logo"
+                width={208}
+                height={208}
+                className="w-full h-full object-cover scale-110"
+                priority
+              />
+            </div>
           </div>
         </motion.div>
 

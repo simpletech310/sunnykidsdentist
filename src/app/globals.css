@@ -17,6 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Premium selection color */
+::selection {
+  background-color: #FDD835;
+  color: #2D2D2D;
+}
+
 /* Sun rays rotation */
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
@@ -48,6 +54,12 @@ html {
   50% { box-shadow: 0 0 20px 4px rgba(229, 57, 53, 0.2); }
 }
 
+/* Shimmer effect for premium feel */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
 .animate-spin-slow {
   animation: spin-slow 60s linear infinite;
 }
@@ -68,6 +80,12 @@ html {
   animation: pulse-glow 2.5s ease-in-out infinite;
 }
 
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
 /* Delay utilities for staggered animations */
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
@@ -78,3 +96,18 @@ html {
 .delay-1500 { animation-delay: 1.5s; }
 .delay-2000 { animation-delay: 2s; }
 .delay-3000 { animation-delay: 3s; }
+
+/* Scrollbar styling for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E53935;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C62828;
+}

@@ -8,13 +8,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image
-                src="/sunnykidsdental.jpg"
-                alt="Sunny Kids Dental"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white shadow-sm flex-shrink-0">
+                <Image
+                  src="/sunnykidsdental.jpg"
+                  alt="Sunny Kids Dental"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-cover scale-110"
+                />
+              </div>
               <span className="font-[family-name:var(--font-nunito)] font-extrabold text-xl">
                 Sunny Kids Dental
               </span>

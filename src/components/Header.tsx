@@ -34,13 +34,15 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <Image
-              src="/sunnykidsdental.jpg"
-              alt="Sunny Kids Dental"
-              width={48}
-              height={48}
-              className="rounded-full"
-            />
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-white shadow-sm ring-2 ring-gray-100 flex-shrink-0">
+              <Image
+                src="/sunnykidsdental.jpg"
+                alt="Sunny Kids Dental"
+                width={48}
+                height={48}
+                className="w-full h-full object-cover scale-110"
+              />
+            </div>
             <span className="hidden sm:block font-[family-name:var(--font-nunito)] font-extrabold text-lg text-text-dark">
               Sunny Kids Dental
             </span>
