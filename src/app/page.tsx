@@ -40,9 +40,29 @@ export default function Home() {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
+              "@type": "MedicalOrganization",
+              name: "Sunny Kids Dental",
+              url: "https://sdk.4everforward.net",
+              logo: "https://sdk.4everforward.net/sunnykidsdental.jpg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+1-909-417-5369",
+                contactType: "customer service"
+              },
+              makesOffer: [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental Exams & Cleanings" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cavity Treatment & Fillings" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preventive Care & Sealants" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Dental Care" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthodontic Evaluations" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sedation Dentistry" } }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
               "@type": "Dentist",
               name: "Sunny Kids Dental - Pomona",
-              image: "/sunnykidsdental.jpg",
+              image: "https://sdk.4everforward.net/sunnykidsdental.jpg",
               telephone: "+1-909-417-5369",
               address: {
                 "@type": "PostalAddress",
@@ -72,13 +92,13 @@ export default function Home() {
                 },
               ],
               priceRange: "$$",
-              url: "https://sunnykidsdental.com",
+              url: "https://sdk.4everforward.net",
             },
             {
               "@context": "https://schema.org",
               "@type": "Dentist",
               name: "Sunny Kids Dental - Compton",
-              image: "/sunnykidsdental.jpg",
+              image: "https://sdk.4everforward.net/sunnykidsdental.jpg",
               telephone: "+1-424-785-6995",
               address: {
                 "@type": "PostalAddress",
@@ -108,7 +128,7 @@ export default function Home() {
                 },
               ],
               priceRange: "$$",
-              url: "https://sunnykidsdental.com",
+              url: "https://sdk.4everforward.net",
             },
           ]),
         }}
